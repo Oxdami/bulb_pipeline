@@ -172,7 +172,7 @@ resource "aws_codepipeline" "dami_backend_pipeline" {
  
       configuration = {
         Owner          = "Oxdami"
-        Repo           = "bulb_pipeline"
+        Repo           = "farm-stack-backend"
         Branch         = "main"
         OAuthToken     = data.aws_ssm_parameter.dami_github_token.value
       }
