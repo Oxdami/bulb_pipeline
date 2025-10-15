@@ -171,8 +171,8 @@ resource "aws_codepipeline" "dami_backend_pipeline" {
       output_artifacts = ["source_output"]
  
       configuration = {
-        Owner          = "thechiefishere"
-        Repo           = "farm-stack-backend"
+        Owner          = "Oxdami"
+        Repo           = "bulb_pipeline"
         Branch         = "main"
         OAuthToken     = data.aws_ssm_parameter.dami_github_token.value
       }
