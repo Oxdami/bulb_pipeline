@@ -158,7 +158,7 @@ resource "aws_instance" "dami_frontend_server" {
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.dami_public_subnet.id
   vpc_security_group_ids = [aws_security_group.dami_frontend_sg.id]
-  key_name = "dami_keypair"
+  key_name = "dami_keypair_2"
  
   user_data = <<EOF
 #!/bin/bash
